@@ -2,7 +2,7 @@
   "private": true,
   "packageManager": "pnpm@7.5.0",
   "scripts": {
-    "build": "nuxi build",
+    "build": "npx prisma generate && nuxi build && npx prisma generate",
     "dev": "nuxi dev",
     "generate": "nuxi generate",
     "preview": "node .output/server/index.mjs",
